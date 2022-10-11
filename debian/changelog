@@ -1,0 +1,146 @@
+liblangtag (0.6.3-2) unstable; urgency=medium
+
+  * disable tests for now since they don't build with check 0.15
+   (closes: #980597)
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 23 Jan 2021 18:32:32 +0100
+
+liblangtag (0.6.3-1) unstable; urgency=medium
+
+  * New upstream version 0.6.3
+
+  * fix build with gtk-doc 1.32 (closes: #939956)
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 20 Nov 2019 11:47:59 +0100
+
+liblangtag (0.6.2-1) unstable; urgency=medium
+
+  * [e48e420] New upstream version 0.6.2
+
+  * upload to unstable
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 04 Oct 2016 20:12:21 +0200
+
+liblangtag (0.6.1-2) experimental; urgency=medium
+
+  * [ee47a27] add missing libxml2-dev Depends: to liblangtag-devs Depends
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 27 Sep 2016 01:27:12 +0200
+
+liblangtag (0.6.1-1) experimental; urgency=medium
+
+  * [4d13221] Imported Upstream version 0.6.1
+    - removes LT_POINTER_TO_INT usage and makes lt-config.h not arch-dep
+      (closes: #837755)
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 21 Sep 2016 21:45:19 +0200
+
+liblangtag (0.6.0-1) experimental; urgency=medium
+
+  * [4ff5dfa] New upstream version 0.6.0
+    - removes deprecated GNOME_COMMON_INIT macro (closes: #829954)
+  * [2eedb29] LangTag-0.5.gir -> LangTag-0.6.gir
+  * [711a0cb] update .symbols
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 13 Sep 2016 19:39:59 +0200
+
+liblangtag (0.5.8-2) unstable; urgency=medium
+
+  * [0f5fb53] add missing Build-Depends: on gnome-common
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 13 Sep 2016 07:17:22 +0200
+
+liblangtag (0.5.8-1) unstable; urgency=medium
+
+  * [e4beee6] New upstream version 0.5.8
+  * [ffd7947] multiarchify
+  * [26fe892] move Maintainer: to Debian LibreOffice Maintainers
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 06 Sep 2016 21:04:02 +0200
+
+liblangtag (0.5.7-2) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 26 Sep 2015 16:01:31 +0200
+
+liblangtag (0.5.7-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 23 Sep 2015 11:35:29 +0200
+
+liblangtag (0.5.1-3) unstable; urgency=low
+
+  * add build-dependency on libtool-bin (closes: #761764) 
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 16 Sep 2014 06:53:55 +0200
+
+liblangtag (0.5.1-2) unstable; urgency=low
+
+  * add explicit -lpthread when building the tests (closes: #713569) 
+  * fix liblangtag-gobject0.shlibs
+  * move liblangtag-doc to doc
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 01 Jul 2013 21:35:29 +0200
+
+liblangtag (0.5.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 30 Apr 2013 09:34:51 +0000
+
+liblangtag (0.4.0-7) unstable; urgency=low
+
+  * upload to unstable
+  * add .shlibs and .symbols (closes: #704676)
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 18 Apr 2013 19:53:12 +0000
+
+liblangtag (0.4.0-6) experimental; urgency=low
+
+  * Fix build with new gobject-introspection, thanks Sjoerd Simons for
+    the patch (closes: #704517)
+  * debian/compat: bump compat to 9 to build with hardening
+ 
+  * merge from Ubuntu:
+    - fixes for -Wformat
+    - fix mem-mngmt-to-error-report stack smashing (closes: #704531)
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 03 Apr 2013 19:17:08 +0000
+
+liblangtag (0.4.0-5) experimental; urgency=low
+
+  * make doc build into override_dh_auto_build-indep target
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 09 Jan 2013 19:40:50 +0100
+
+liblangtag (0.4.0-4) experimental; urgency=low
+
+  * build-conflict against locales-all 
+  * update Homepage:
+  * build-depend against gtk-doc-tools and build liblangtag-doc
+    package
+  * fix nocheck handling (missing -- for dh_auto_configure)
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 31 Dec 2012 15:31:43 +0100
+
+liblangtag (0.4.0-3) experimental; urgency=low
+
+  * add libtool and locales (locale.alias!) to build-depends 
+  * rm -f config.log in clean...
+  * support nocheck in DEB_BUILD_OPTIONS
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 07 Dec 2012 22:17:31 +0100
+
+liblangtag (0.4.0-2) experimental; urgency=low
+
+  * fix debian/copyright 
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 29 Nov 2012 19:33:40 +0100
+
+liblangtag (0.4.0-1) experimental; urgency=low
+
+  * Initial release
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 21 Nov 2012 23:13:30 +0100

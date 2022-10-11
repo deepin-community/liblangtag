@@ -1,0 +1,22 @@
+Description: fix build with gtk-doc 1.32
+Author: Rene Engelhard <rene@debian.org>
+
+---
+Origin: vendor
+Bug-Debian: https://bugs.debian.org/939956
+Forwarded: no
+Last-Update: 2019-11-20
+
+--- liblangtag-0.6.3.orig/docs/liblangtag-docs.sgml
++++ liblangtag-0.6.3/docs/liblangtag-docs.sgml
+@@ -58,10 +58,6 @@
+     </section>
+ 
+   </chapter>
+-  <chapter id="object-tree">
+-    <title>Object Hierarchy</title>
+-     <xi:include href="xml/tree_index.sgml"/>
+-  </chapter>
+   <index id="api-index-full">
+     <title>API Index</title>
+     <xi:include href="xml/api-index-full.xml"><xi:fallback /></xi:include>
